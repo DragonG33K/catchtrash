@@ -1,0 +1,201 @@
+body {
+    min-height: 100vh; 
+    align-items: center;
+    }
+@media screen and (min-width:1024px){
+    * {
+        --telax: 800px;
+        --telay: 100vh;
+        --playerS: 70px;
+        --lixoS: 40px;
+        --btnw: 200px;
+        --btnh: 45px;
+        --homeS: 50px; 
+        --telaL: 20vw;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+    }
+    .personagem{
+        background-image: url(../imagem/lixoG.png);
+    }
+    .tela{
+        left: 20vw
+    }
+    .lixo{
+        background-image: url(../imagem/mouseG.png);
+    }
+    .lixoORG{
+        background-image: url(../imagem/LixoOrgG.png);
+    }
+}
+@media screen and (max-width:1023px) and (min-width:500px){
+    * {
+        --telax: 100vw;
+        --telay: 100vh;
+        --playerS: 70px;
+        --lixoS: 30px;
+        --btnw: 200px;
+        --btnh: 45px;
+        --homeS: 50px; 
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    
+    }
+    .personagem{
+        background-image: url(../imagem/lixoG.png);
+    }
+    .lixo{
+        background-image: url(../imagem/mouseM.png);
+    }
+    .lixoORG{
+        background-image: url(../imagem/LixoOrgM.png);
+    }
+}
+@media screen and (max-width: 499px){
+    * {
+        --telax: 100vw;
+        --telay: 100vh;
+        --playerS: 70px;
+        --lixoS: 20px;
+        --btnw: 200px;
+        --btnh: 45px;
+        --homeS: 50px;  
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    
+    }
+    .personagem{
+        background-image: url(../imagem/lixoG.png);
+    }
+    .lixo{
+        background-image: url(../imagem/mouseP.png);
+    }
+    .lixoORG{
+        background-image: url(../imagem/LixoOrgP.png);
+    }
+}
+
+
+
+.tela {
+    position: relative;
+    width: var(--telax);
+    height: var(--telay);
+    border: 3px solid black; 
+    background-image: url(../imagem/fundo.png);
+}
+
+.personagem {
+    position: absolute;
+    width: var(--playerS);
+    height: var(--playerS);
+}
+
+.lixo {
+    width: var(--lixoS);
+    height: var(--lixoS);
+    position: absolute;
+    user-select: none;
+}
+
+.lixoORG {
+    width: var(--lixoS);
+    height: var(--lixoS);
+    position: absolute;
+    user-select: none;
+}
+
+.contador {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    color: rgb(2, 255, 2);
+    font-size: 30px;
+    left: 6px;
+    top: 5px;
+    user-select: none;
+}
+
+.vidas {
+    position: absolute;
+    right: 0px;
+    width: 120px;
+    height: 30px;
+    font-size: 25px;
+    user-select: none;
+}
+
+.perdeu {
+    text-align: center;
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: calc(var(--telax) - 4px);
+    height:calc(var(--telay) - 4px);
+    background-color: rgba(0, 0, 0, 0.705);
+}
+
+.timer {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    text-align: center;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    font-size: 250pt;
+    width: calc(var(--telax) - 4px);
+    height:calc(var(--telay) - 4px);
+    color: greenyellow;
+    background-color: rgba(0, 0, 0, 0.705);
+}
+
+.text {
+    max-width: 694px;
+    width: var(--telax);
+    position: absolute;
+}
+
+.texto{
+    font-family:"Lucida Console", "Courier New", monospace;
+    padding-bottom: 10px;
+    color: aliceblue;
+    user-select: none;
+}
+
+.botao {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: var(--btnw);
+    height: var(--btnh);
+    font-size: 15pt;
+    border-radius: 25px;
+    color: aliceblue;
+    background-color: rgb(9, 132, 9);
+    cursor: pointer;
+    border: 2px solid black;
+}
+.num{
+    cursor: default;
+    user-select: none;
+}
+.home {
+    text-align: center;
+    border: 2px solid black;
+    width: var(--homeS);
+    height: var(--homeS);
+    border-radius: 50px;
+    color: aliceblue;
+    background-color: rgb(9, 132, 9);
+    cursor: pointer;
+}
+
+.gg-home {
+    margin: auto;
+}
