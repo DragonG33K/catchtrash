@@ -18,16 +18,16 @@ body {
         
     }
     .personagem{
-        background-image: url(../imagem/lixoG.png);
+        background-image: url(imagem/lixoG.png);
     }
     .tela{
         left: 20vw
     }
     .lixo{
-        background-image: url(../imagem/mouseG.png);
+        background-image: url(imagem/mouseG.png);
     }
     .lixoORG{
-        background-image: url(../imagem/LixoOrgG.png);
+        background-image: url(imagem/LixoOrgG.png);
     }
 }
 @media screen and (max-width:1023px) and (min-width:500px){
@@ -45,13 +45,13 @@ body {
     
     }
     .personagem{
-        background-image: url(../imagem/lixoG.png);
+        background-image: url(imagem/lixoG.png);
     }
     .lixo{
-        background-image: url(../imagem/mouseM.png);
+        background-image: url(imagem/mouseM.png);
     }
     .lixoORG{
-        background-image: url(../imagem/LixoOrgM.png);
+        background-image: url(imagem/LixoOrgM.png);
     }
 }
 @media screen and (max-width: 499px){
@@ -69,13 +69,13 @@ body {
     
     }
     .personagem{
-        background-image: url(../imagem/lixoG.png);
+        background-image: url(imagem/lixoG.png);
     }
     .lixo{
-        background-image: url(../imagem/mouseP.png);
+        background-image: url(imagem/mouseP.png);
     }
     .lixoORG{
-        background-image: url(../imagem/LixoOrgP.png);
+        background-image: url(imagem/LixoOrgP.png);
     }
 }
 
@@ -86,7 +86,7 @@ body {
     width: var(--telax);
     height: var(--telay);
     border: 3px solid black; 
-    background-image: url(../imagem/fundo.png);
+    background-image: url(imagem/fundo.png);
 }
 
 .personagem {
